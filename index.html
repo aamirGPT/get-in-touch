@@ -4,10 +4,305 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>get-in-touch</title>
-        <style></style>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .Get-In-Touch {
+                display: flex;
+                height: 100vh;
+                padding: 0 100px;
+                background-color: black;
+            }
+            .GIT-Left {
+                display: flex;
+                width: 90%;
+                color: white;
+                justify-content: center;
+                align-items: center;
+                padding: 40px;
+            }
+            .GIT-Left img{
+                width: 100%;
+            }
+            .GIT-Right {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                background-color: #dcff79;
+                padding: 50px;
+                justify-content: space-between;
+                gap: 50px;
+            }
+
+            .Section-8-Body-Right {
+                width: 100%;
+                height: fit-content;
+            }
+            .TypeForm {
+                display: flex;
+                border-radius: 20px;
+                width: 100%;
+                background-color: black;
+                color: white;
+            }
+            .TF-Section-1 {
+                width: 100%;
+            }
+            .TF-Section-1 video {
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                object-fit: cover;
+            }
+            .TF-Section-2 {
+                width: 100%;
+                padding: 5vh 2.5vw;
+            }
+            .TF-Section-2-Header{
+                font-size: 1.75vw;
+            }
+            .TF-Section-2-Heading {
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+            .TF-Section-2-Header-Tagline {
+                font-size: 1.25vw;
+                color: #d4d4d4;
+            }
+            .TF-Section-2-Body {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .TF-Inputs {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                height: 30px;
+                color: rgba(255, 255, 255, 0.9);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 0;
+            }
+            .TF-Inputs:active {
+                outline: none !important;
+                box-shadow: none;
+            }
+            .TF-Inputs:focus {
+                outline: none !important;
+                box-shadow: none;
+                background-color: black;
+                color: rgb(230, 230, 230, 0.8);
+            }
+            .TF-Inputs::placeholder {
+                color: rgba(158, 158, 158, 0.8);
+            }
+            .TF-Submit {
+                margin-top: 10px;
+            }
+            .Contact-Info-Wrapper{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .Contact-Info {
+                display: flex;
+                flex-direction: column;
+            }
+            .CI-Heading {
+                font-size: 20px;
+                font-weight: 800;
+            }
+
+            /* Media Query for mobile devices*/
+
+            @media only screen and (max-width: 768px) {
+                .Get-In-Touch {
+                    flex-direction: column;
+                    padding: 20px;
+                    height: auto;
+                }
+                .GIT-Left{
+                    width: 100%;
+                    padding: 20px;
+                }
+                .GIT-Right {
+                    padding: 20px;
+                    height: 100%;
+                    gap: 60px;
+                }
+                .TypeForm {
+                    flex-direction: column;
+                    height: 100%;
+                }
+                .TF-Section-1 {
+                    height: 100%;
+                }
+                .TF-Section-1 video {
+                    border-bottom-left-radius: 0;
+                    border-top-right-radius: 20px;
+                }
+                .TF-Section-2 {
+                    padding: 20px 20px;
+                }
+                .TF-Section-2-Header{
+                    font-size: 16px;
+                }
+                .TF-Section-2-Header-Tagline {
+                    font-size: 14px;
+                }
+                .TF-Section-2-Heading {
+                    margin-bottom: 10px;
+                    font-size: 4vw;
+                }
+                .Contact-Info {
+                    padding: 0 20px;
+                }
+                .CI-Data {
+                    margin-bottom: 20px;
+                }
+            }
+            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+                .Get-In-Touch{
+                    height: auto;
+                }
+                .TypeForm {
+                    flex-direction: column;
+                    height: 100%;
+                }
+            }
+        </style>
     </head>
     <body>
-        <div class="Get-In-Touch"></div>
-        <script></script>
+        <div class="Get-In-Touch">
+            <div class="GIT-Left">
+                <img src="./GIT-Image.png" alt="Get In Touch">
+            </div>
+            <div class="GIT-Right">
+                <div class="Section-8-Body-Right">
+                    <div class="TypeForm">
+                        <div class="TF-Section-1">
+                            <video
+                                src="./BotFooter.mp4"
+                                autoplay
+                                loop
+                                muted
+                            ></video>
+                        </div>
+                        <div class="TF-Section-2">
+                            <div class="TF-Section-2-Heading">
+                                <div class="TF-Section-2-Header">
+                                    Love the Idea? We will contact You!
+                                </div>
+                                <div class="TF-Section-2-Header-Tagline">
+                                    We are open to any suggestions or just to
+                                    have a chat
+                                </div>
+                            </div>
+                            <form
+                                class="TF-Section-2-Body"
+                                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeAYlbGUjLKwv2T7QuELjs5Gv6VCYCdXKsqS4Qsn1zDqQ28iw/formResponse"
+                                onsubmit="return validateForm()"
+                            >
+                                <input
+                                    type="text"
+                                    class="form-control TF-Inputs"
+                                    placeholder="Name"
+                                    oninput="validateAlphabeticInput(this)"
+                                    name="entry.380032640"
+                                    required
+                                />
+                                <input
+                                    type="text"
+                                    class="form-control TF-Inputs"
+                                    placeholder="name@example.com"
+                                    name="entry.1512683108"
+                                    id="emailInput"
+                                    oninput="validateEmail()"
+                                    required
+                                />
+                                <span
+                                    id="emailError"
+                                    style="color: red; font-size: 14px"
+                                ></span>
+                                <textarea
+                                    class="form-control TF-Inputs"
+                                    placeholder="Any Questions or Messages"
+                                    id="floatingTextarea"
+                                    name="entry.1426488208"
+                                ></textarea>
+
+                                <button
+                                    class="btn btn-primary TF-Submit"
+                                    type="submit"
+                                >
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="Contact-Info-Wrapper">
+                    <div class="Contact-Info">
+                        <div class="CI-Heading">EMAIL ADDRESS</div>
+                        <div class="CI-Data">sravana@interstellarxr.tech</div>
+                    </div>
+                    <div class="Contact-Info">
+                        <div class="CI-Heading">PHONE NUMBER</div>
+                        <div class="CI-Data">+91 6302-633-646</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function validateAlphabeticInput(input) {
+                input.value = input.value.replace(/[^a-zA-Z\s]/g, "");
+            }
+
+            function validateEmail() {
+                let emailInput = document.getElementById("emailInput").value;
+                let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                let emailError = document.getElementById("emailError");
+
+                if (emailInput === "") {
+                    emailError.textContent = ""; // Clear error message if no input
+                } else if (emailRegex.test(emailInput)) {
+                    emailError.textContent = ""; // Clear error message if email is valid
+                } else {
+                    emailError.textContent =
+                        "Please enter a valid email address";
+                }
+            }
+            function validateForm() {
+                // Check the email input before submitting the form
+                let emailInput = document.getElementById("emailInput").value;
+                let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                let emailError = document.getElementById("emailError");
+
+                if (emailInput === "" || !emailRegex.test(emailInput)) {
+                    // Display error message and prevent form submission
+                    emailError.textContent =
+                        "Please enter a valid email address";
+                    return false;
+                }
+
+                // If everything is valid, you can proceed with form submission
+                return true;
+            }
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
